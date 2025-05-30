@@ -5,7 +5,6 @@ use utils::{cls, all_equal};
 
 
 
-
 fn get_dimension() -> Result<u8, Box<dyn std::error::Error>>{
     let valids = (3, 6, 9);
 
@@ -69,7 +68,7 @@ fn check_state(field: &Vec<Vec<char>>, dim: usize) -> Option<char>{
             return Some(field[i][0]);
         }
     }
-    //todo: check colums and 2 diagonals alse
+    //todo: check colums and 2 diagonals also
     None
 }
 
